@@ -2,3 +2,5 @@ s_expr: s_expressions.c
 	cc -std=c99 -Wall s_expressions.c mpc.c -ledit -o s_expr
 q_expr: q_expressions.c
 	cc -std=c99 -Wall q_expressions.c mpc.c -ledit -o q_expr
+variables: variables.c
+	cc -std=c99 -Wall variables.c mpc.c -ledit -o variables
