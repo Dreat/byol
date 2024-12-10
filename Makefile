@@ -4,3 +4,5 @@ q_expr: q_expressions.c
 	cc -std=c99 -Wall q_expressions.c mpc.c -ledit -o q_expr
 variables: variables.c
 	cc -std=c99 -Wall variables.c mpc.c -ledit -o variables
+functions: functions.c
+	cc -std=c99 -Wall functions.c mpc.c -ledit -o functions
