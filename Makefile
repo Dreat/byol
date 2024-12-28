@@ -6,3 +6,5 @@ variables: variables.c
 	cc -std=c99 -Wall variables.c mpc.c -ledit -o variables
 functions: functions.c
 	cc -std=c99 -Wall functions.c mpc.c -ledit -o functions
+conditionals: conditionals.c
+	cc -std=c99 -Wall conditionals.c mpc.c -ledit -o conditionals
