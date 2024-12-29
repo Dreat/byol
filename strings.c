@@ -1311,8 +1311,12 @@ int main(int argc, char **argv) {
   lenv *e = lenv_new();
   lenv_add_builtins(e);
 
+  lval *standard = lval_add(lval_sexpr(), lval_str("standard.byol"));
+  lval *std = builtin_load(e, standard);
+  lval_del(std);
+
   if (argc == 1) {
-  puts("BYOL Version 0.0.9");
+  puts("BYOL Version 0.1.0");
   puts("Press Ctrl+c to Exit\n");
     // In a never ending loop
     while (1) {
