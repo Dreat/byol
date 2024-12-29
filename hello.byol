@@ -1,0 +1,4 @@
+; comment test
+(print "Hello world!")
+(print "Test test")
+(print (+ (* 2 3 4) (* 4 5 6)))
